@@ -1,0 +1,361 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+a {
+    text-decoration: none;
+    color: #0078d7;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: gray;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Align logo and content */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center;
+}
+
+.logo {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+    margin-left: 10px; /* Add some space from the left edge */
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 10px black;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: #ff6f61;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    color: #e6e6e6;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../image/images.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 12px black;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* About Section */
+section {
+    padding: 3rem 0;
+    color: #333;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+section p {
+    font-size: 1.25rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: gray;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content (image) */
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Previous and Next buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Services Section */
+.services-section {
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: #0078d7;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #333;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background-color: #ff8000;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+.cta-btn:hover {
+    background-color: #e07b00;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-image {
+        margin-top: 2rem;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+    }
+
+    #nav.open {
+        display: block;
+    }
+
+    #nav-list li {
+        margin: 10px 0;
+    }
+
+    #nav-list li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    #nav-list li a:hover {
+        background-color: #575757;
+    }
+}
